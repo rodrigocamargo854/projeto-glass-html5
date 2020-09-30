@@ -1,0 +1,64 @@
+ @charset "UTF-8";
+ /* formatacao para todo tag <p> de paragrafo */
+ 
+ body {
+     background-image: url("_imagens/elegant-white-background-with-shiny-lines_1017-17580.webp");
+ }
+ 
+ body {
+     background-color: white;
+     color: rgba(0, 0, 0, 1);
+ }
+ 
+ p {
+     text-align: justify;
+     text-indent: 50px;
+ }
+ /* formatação de imagens com legendas */
+ /* é preciso definir uma classe para o figure */
+ /* nome da tag. nome da classe para referencia a classe desejada */
+ /* nome tag . nome da classe */
+ 
+ figure.legend-pic {
+     position: relative;
+     border: 8px solid white;
+     /* sombra     deslocamento vertical horizontal  */
+     box-shadow: 1px 1px 4px black;
+ }
+ 
+ figure.legend-pic img {
+     /* largura */
+     width: 100%;
+     /* altura */
+     height: 100%;
+ }
+ /* legenda da foto */
+ /* figcaption objeto containe do fig */
+ 
+ figure.legend-pic figcaption {
+     opacity: 0;
+     /* posicao absoluta */
+     position: absolute;
+     /* acima */
+     top: 0px;
+     /* opacidade */
+     opacity: 0;
+     position: absolute;
+     top: 0px;
+     /* criando transparencia */
+     background-color: rgba(0, 0, 0, .4);
+     /* cor da legenda */
+     color: white;
+     width: 100%;
+     height: 100%;
+     /* espaço dentro da legenda */
+     padding: 10px;
+     /* criando um box dentro da borda */
+     box-sizing: border-box;
+     transition: opacity 1s;
+ }
+ 
+ figure.legend-pic:hover figcaption {
+     opacity: 2;
+     transition: 1s;
+ }
